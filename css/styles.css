@@ -1,7 +1,9 @@
 body{
   background-color: #19A2AE;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+  background-repeat: no-repeat;
 }
-
 p{
   color: #6A6F81;
   font-family: 'Kumbh Sans', sans-serif;
@@ -20,7 +22,7 @@ h2{
 
 hr{
   color: #6A6F81;
-  opacity: 0.4;
+  opacity: 0.2;
   position: relative;
   top: 4.5rem;
 }
@@ -53,7 +55,7 @@ span{
 }
 
 .pattern{
-  width: 23.5rem;
+  width: 22rem;
   height: 9.2rem;
   border-top-right-radius: 0.825rem;
   border-top-left-radius: 0.825rem;
@@ -62,25 +64,26 @@ span{
   background-color: white;
   border-radius: 50%;
   padding: 0.3rem;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 22.1rem;
+  position: relative;
+  bottom: 3.5rem;
+  left: 7.5rem;
 }
 
 .main{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  height: 100vh;
 }
 
 .container{
+  box-shadow: 0 7px 12px #343F56;
   background-color: white;
   height: 25rem;
-  width: 23.5rem;
+  width: 22rem;
   border-radius: 0.825rem;
-  margin-top: 15.6875rem;
+  margin: 0 auto;
 }
 
 .name{
@@ -94,9 +97,10 @@ span{
 }
 .stats{
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 1.5rem;
   position: relative;
   top: 5rem;
+  left: 1.1rem;
 }
 
 .attribution{
@@ -104,4 +108,15 @@ span{
   font-size: 0.8rem;
   text-align: center;
   padding-top: 2rem;
+}
+
+.info{
+  position: relative;
+  bottom: 7rem;
+}
+
+@media screen and (min-width: 1140px){
+  body{
+    background-position: bottom 48vh right 48vw, top 48vh left 48vw;
+  }
 }
